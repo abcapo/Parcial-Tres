@@ -77,14 +77,14 @@ class TaTeTi():
 
     def draw_board(self):
         self.display = "\n"
-        for num in range(9):
-            if self.board[num] != " ":
-                self.display += " " + self.board[num] + " "
+        for i in range(9):
+            if self.board[i] != " ":
+                self.display += " " + self.board[i] + " "
             else:
-                self.display += " " + str(1+num) + " "
-            if num == 2 or num == 5:
+                self.display += " " + str(1+i) + " "
+            if i == 2 or i == 5:
                 self.display += "\n---+---+---\n"
-            elif num == 8:
+            elif i == 8:
                 self.display += "\n"
             else:
                 self.display += "|"
